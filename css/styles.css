@@ -99,15 +99,17 @@ ul {
     letter-spacing: 0.02em;
 }
 
-/* .navbar_item a:hover,
+.navbar_item a:hover,
 .navbar_item a:focus,
-.mail:hover, .mail:focus, 
-.tel:hover, .tel:focus {
+.contacts-link:hover,
+.contacts-link:focus{
     color: var(--brand-color);
-}  */
+} 
 
-.tel:hover .icon-smartphone {
-    fill: var(--brand-color);
+
+.icon-smartphone,
+.icon-mail {
+    fill: currentColor;
 }
 
 .navbar_item:last-child {
@@ -119,7 +121,7 @@ ul {
 }
 
 
-.mail, .tel {
+.contacts-link {
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -127,6 +129,7 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
+    align-items:center;
 }
 
 .section{
