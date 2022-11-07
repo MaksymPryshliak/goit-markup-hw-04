@@ -117,6 +117,7 @@ ul {
 
 .navbar_item .active_page{
     color: var(--brand-color);
+    transition-timing-function: ea;
 }
 
 
@@ -278,7 +279,7 @@ color: var(--light-color);
 
 .our_team {
     min-height: 648px;
-    background-color: #F5F4FA;
+    background-color: var(--bg-color);
     text-align: center;
 }
 
