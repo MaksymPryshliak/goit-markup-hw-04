@@ -99,15 +99,16 @@ ul {
     letter-spacing: 0.02em;
 }
 
-/* .navbar_item a:hover,
+.navbar_item a:hover,
 .navbar_item a:focus,
-.mail:hover, .mail:focus, 
-.tel:hover, .tel:focus {
+.contacts-link:hover, .contacts-link:focus{
     color: var(--brand-color);
-}  */
+} 
 
-.tel:hover .icon-smartphone {
-    fill: var(--brand-color);
+
+.icon-smartphone,
+.icon-mail {
+    fill: currentColor;
 }
 
 .navbar_item:last-child {
@@ -119,7 +120,7 @@ ul {
 }
 
 
-.mail, .tel {
+.contacts-link {
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -127,6 +128,7 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
+    align-items:center;
 }
 
 .section{
@@ -197,6 +199,7 @@ ul {
  .icon-mail {
     margin-right: 10px;
 }
+
 
 .social{
     display: flex;
@@ -519,12 +522,17 @@ color: var(--light-color);
     gap: 30px;
 }
 
+.port_list_item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+}
+
 .port_list_item {
     width: 370px;
     height: 404px;
-    /* flex-basis: calc(33.333% - 20px); */
-    /* padding-right: 30px;
-    padding-top: 30px; */
+
 }
 
 .port_list_item h2 {
@@ -537,7 +545,7 @@ color: var(--light-color);
 
 .port_list_item p {
     font-size: 16px;
-    line-height: 188%;
+    line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
